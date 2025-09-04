@@ -1,92 +1,116 @@
-# IQ01
+# IQ01 : Introduction à l'Informatique Quantique (UTC)
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-%233776AB?style=for-the-badge&logo=python)
+![Qiskit](https://img.shields.io/badge/Qiskit-0.45%2B-blue?style=for-the-badge&logo=ibm)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter)
 
+Ce dépôt rassemble l'ensemble des travaux réalisés dans le cadre de l'unité de valeur **IQ01 - Introduction à l'Informatique Quantique** à l'**Université de Technologie de Compiègne (UTC)**. Il contient les travaux pratiques (TP) qui explorent les concepts fondamentaux et les algorithmes de l'informatique quantique, ainsi qu'un projet de recherche approfondi sur une application potentielle de cette technologie.
 
-## Getting started
+## Table des matières
+1. [À propos du projet](#à-propos-du-projet)
+2. [Travaux Pratiques (TP)](#travaux-pratiques-tp)
+    - [TP2 : Fondamentaux de Qiskit et Portes Quantiques](#tp2--fondamentaux-de-qiskit-et-portes-quantiques)
+    - [TP3 : Algorithmes Quantiques - Deutsch-Jozsa et Simon](#tp3--algorithmes-quantiques---deutsch-jozsa-et-simon)
+    - [TP4 : Étude de Cas - Le Problème de Monty Hall](#tp4--étude-de-cas---le-problème-de-monty-hall)
+3. [Projet de Recherche : Résolution des Équations de Navier-Stokes](#projet-de-recherche--résolution-des-équations-de-navier-stokes-par-linformatique-quantique)
+4. [Technologies Utilisées](#technologies-utilisées)
+5. [Comment utiliser ce dépôt](#comment-utiliser-ce-dépôt)
+6. [Auteurs](#auteurs)
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## À propos du projet
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+L'objectif de ce cours était de fournir une introduction solide aux principes de l'informatique quantique. Les travaux pratiques nous ont permis de nous familiariser avec le framework **Qiskit d'IBM** pour construire et simuler des circuits quantiques. Le projet de recherche nous a donné l'opportunité d'explorer comment ces concepts pourraient être appliqués pour résoudre des problèmes complexes, encore hors de portée des ordinateurs classiques.
 
-## Add your files
+## Travaux Pratiques (TP)
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+Les notebooks Jupyter des TPs contiennent des implémentations de concepts clés en informatique quantique.
 
-```
-cd existing_repo
-git remote add origin https://gitlab.utc.fr/nguyenra/IQ01.git
-git branch -M main
-git push -uf origin main
-```
+### TP2 : Fondamentaux de Qiskit et Portes Quantiques
+Ce TP couvre les bases de la manipulation de qubits avec Qiskit.
+- **Concepts explorés** :
+  - Différence entre bit classique et qubit (superposition, intrication).
+  - Implémentation des portes quantiques de base : Hadamard (H), Pauli-X (NOT), CNOT, SWAP.
+  - Création d'un **état de Bell**, illustrant le phénomène d'intrication.
+  - Simulation du protocole de **téléportation quantique**.
+- **Fichiers** : `TP2/tp2-ex1-2-3.ipynb`, `TP2/tp2-ex4.ipynb`
 
-## Integrate with your tools
+### TP3 : Algorithmes Quantiques - Deutsch-Jozsa et Simon
+Ce TP se concentre sur les premiers algorithmes démontrant la supériorité quantique pour des problèmes spécifiques.
+- **Concepts explorés** :
+  - **Algorithme de Deutsch-Jozsa** : Distinguer une fonction constante d'une fonction équilibrée en une seule évaluation.
+  - **Algorithme de Simon** : Trouver la période d'une fonction, un problème précurseur de l'algorithme de Shor.
+  - Utilisation du concept d'**oracle** pour encapsuler la fonction à étudier.
+- **Fichier** : `TP3/tp3.ipynb`
 
-- [ ] [Set up project integrations](https://gitlab.utc.fr/nguyenra/IQ01/-/settings/integrations)
+### TP4 : Étude de Cas - Le Problème de Monty Hall
+Ce TP utilise un circuit quantique pour modéliser le célèbre paradoxe probabiliste.
+- **Concepts explorés** :
+  - Modélisation d'un problème probabiliste avec des qubits.
+  - Comparaison entre une simulation classique (Monte-Carlo) et un circuit quantique qui représente les probabilités de gain.
+  - Le circuit démontre que la stratégie de changer de porte après la révélation du présentateur offre **2/3 de chances de gagner**, contre 1/3 en gardant son choix initial.
+- **Fichier** : `TP4/tp4.ipynb`
 
-## Collaborate with your team
+## Projet de Recherche : Résolution des Équations de Navier-Stokes par l'Informatique Quantique
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+Ce projet constitue une exploration théorique de l'application de l'informatique quantique à l'un des problèmes les plus célèbres de la physique et des mathématiques appliquées.
 
-## Test and Deploy
+- **Titre complet** : `Résolution des équations de Navier-Stokes par l'informatique quantique`
+- **Auteurs** : Raphael Chauvier, Robin Dereux, Raphael Nguyen
+- **Document** : [Rapport_Navier_Stokes_Quantique.pdf](<chemin_vers_votre_pdf/Rapport_IQ01.pdf>) (Pensez à renommer et lier le PDF ici)
 
-Use the built-in continuous integration in GitLab.
+### Résumé du projet
+Les équations de Navier-Stokes, qui décrivent la dynamique des fluides, sont notoirement difficiles à résoudre analytiquement et numériquement en raison de leur non-linéarité. Ce rapport étudie le potentiel des ordinateurs quantiques pour surmonter certaines de ces limitations.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+Notre analyse explore :
+1.  **Les limites des méthodes classiques** : Nous avons étudié les défis computationnels des méthodes de résolution numérique comme la Méthode des Éléments Finis (FEM).
+2.  **L'intégration d'algorithmes quantiques** : Nous avons examiné comment des algorithmes quantiques, notamment le **Quantum Linear Equations (QLE)**, pourraient accélérer la résolution des systèmes d'équations linéaires qui sont au cœur des solveurs FEM.
+3.  **Conclusion** : Bien qu'une solution entièrement quantique reste lointaine, notre recherche conclut que des **approches hybrides** (classique-quantique) pourraient offrir une **amélioration de complexité polynomiale** pour des sous-problèmes spécifiques. Cela ouvre des perspectives prometteuses pour la simulation de fluides complexes à l'avenir.
 
-***
+## Technologies Utilisées
+- **Langage** : Python 3
+- **Framework quantique** : Qiskit (SDK IBM Quantum)
+- **Bibliothèques Python** : NumPy, Matplotlib
+- **Environnement** : Jupyter Notebook
+- **Rédaction du rapport** : LaTeX
 
-# Editing this README
+## Comment utiliser ce dépôt
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+Pour explorer les notebooks de ce projet, suivez ces étapes :
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+1.  **Clonez le dépôt :**
+    ```bash
+    git clone https://github.com/RAPHCVR/IQ.git
+    cd IQ
+    ```
 
-## Name
-Choose a self-explaining name for your project.
+2.  **Créez un environnement virtuel (recommandé) :**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # Sur Windows: venv\Scripts\activate
+    ```
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+3.  **Installez les dépendances :**
+    Créez un fichier `requirements.txt` avec le contenu suivant, puis installez-le.
+    ```
+    # requirements.txt
+    qiskit
+    qiskit-ibm-runtime
+    qiskit_textbook
+    numpy
+    matplotlib
+    ```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+4.  **Lancez Jupyter Notebook :**
+    ```bash
+    jupyter notebook
+    ```
+    Vous pouvez maintenant naviguer dans les dossiers `TP2`, `TP3`, `TP4` et exécuter les notebooks.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+## Auteurs
+Ce projet a été réalisé par :
+- **Raphael Chauvier** ([@RAPHCVR](https://github.com/RAPHCVR))
+- **Robin Dereux**
+- **Raphael Nguyen**
